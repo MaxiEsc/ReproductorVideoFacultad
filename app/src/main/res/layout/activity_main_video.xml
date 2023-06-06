@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainVideo">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="@string/title"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvVoid1"
+            android:text="@string/space"
+            android:textSize="46sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <VideoView
+            android:id="@+id/miVideo"
+            android:layout_width="366dp"
+            android:layout_height="327dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="4:3"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvVoid2"
+            android:text="@string/space"
+            android:textSize="46sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:onClick="btnAtras"
+                android:background="@drawable/back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/btnPause_Play"
+                android:onClick="btnPausarReproducir"
+                android:background="@drawable/pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+            <Button
+                android:id="@+id/btnNext"
+                android:onClick="btnSiguiente"
+                android:background="@drawable/next"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVoid3"
+            android:text="@string/space"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:text="@string/back"
+            android:onClick="btnVolver"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

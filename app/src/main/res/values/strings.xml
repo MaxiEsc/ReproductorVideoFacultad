@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiReproductorVideo</string>
+    <string name="menu">Aplicacion de Tarea</string>
+    <string name="title">Mi Video</string>
+    <string name="space"></string>
+    <string name="back">Volver</string>
+    <string name="textfinal">Disfrute del Servicio</string>
+</resources>
